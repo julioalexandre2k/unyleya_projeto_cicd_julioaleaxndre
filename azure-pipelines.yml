@@ -49,7 +49,7 @@ stages:
 {
     "buildId": 19,
     "definition": "zicht - CI",
-    "definitionUrl": "https://samuelv.visualstudio.com/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/_apis/build/Definitions/1",
+    "definitionUrl": "https://julioalexandreun.vsrm.visualstudio.com/unyleyaativiade4/_apis/Release/definitions/1",
     "detailedMessage": "Build 20200810.7 failed\r\n\r\n- Bash exited with code '1'.\r\n",
     "duration": 37206,
     "finishTime": 1597051458614,
@@ -61,7 +61,7 @@ stages:
     "timestamp": 1597051472807,
     "type": "build.complete",
     "uri": "vstfs:///Build/Build/19",
-    "url": "https://samuelv.visualstudio.com/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/_apis/build/Builds/19"
+    "url": "https://julioalexandreun.vsrm.visualstudio.com/unyleyaativiade4/_apis/Release/definitions/1"
 },
 {
     "detailedMessage": "Deployment of release Release-5 on stage dev rejected. Time to deploy: 00:00:30.",
@@ -87,7 +87,7 @@ stages:
 {
     "buildId": 18,
     "definition": "zicht - CI",
-    "definitionUrl": "https://samuelv.visualstudio.com/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/_apis/build/Definitions/1",
+    "definitionUrl": "https://julioalexandreun.vsrm.visualstudio.com/unyleyaativiade4/_apis/Release/definitions/1",
     "detailedMessage": "Build 20200810.6 succeeded",
     "duration": 35819,
     "finishTime": 1597051085641,
@@ -99,5 +99,5 @@ stages:
     "timestamp": 1597051099203,
     "type": "build.complete",
     "uri": "vstfs:///Build/Build/18",
-    "url": "https://samuelv.visualstudio.com/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/_apis/build/Builds/18"
+    "url": "https://julioalexandreun.vsrm.visualstudio.com/unyleyaativiade4/_apis/Release/definitions/1"
 }
