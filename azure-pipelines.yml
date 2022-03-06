@@ -27,3 +27,22 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/azure-vote/Dockerfile'
         tags: |
           $(tag)
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Azure Container Registry'
+    azureSubscription: 'Azure subscription 1 (ada499d9-c70f-47f4-9f76-7d18bb7eb0b4)'
+    azureContainerRegistry: '{"loginServer":"unyleyajulio.azurecr.io", "id" : "/subscriptions/ada499d9-c70f-47f4-9f76-7d18bb7eb0b4/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.ContainerRegistry/registries/unyleyajulio"}'
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Run a Docker Compose command'
+- task: HelmDeploy@0
+  inputs:
+    connectionType: 'Azure Resource Manager'
+    azureSubscription: 'Azure subscription 1 (ada499d9-c70f-47f4-9f76-7d18bb7eb0b4)'
+    azureResourceGroup: 'teste_unyle_group'
+    kubernetesCluster: 'teste_unyleya'
+    namespace: 'Lowtri'
+    command: 'ls'
